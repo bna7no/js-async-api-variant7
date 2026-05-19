@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Country Explorer</h1>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Введіть назву країни">
+
+    <select id="regionSelect">
+      <option value="">Усі регіони</option>
+      <option value="Europe">Europe</option>
+      <option value="Asia">Asia</option>
+      <option value="Africa">Africa</option>
+      <option value="Americas">Americas</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+
+    <button id="loadBtn">Завантажити країни</button>
+  </div>
+
+  <div id="loading" class="loading hidden">
+    Завантаження...
+  </div>
+
+  <div id="error" class="error hidden"></div>
+
+  <div id="countriesContainer" class="countries"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
